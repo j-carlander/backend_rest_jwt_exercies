@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  gap: 1em;
+}
+
+.server-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-block {
+  margin: 1em;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+li {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.price {
+  margin-left: 1em;
+}

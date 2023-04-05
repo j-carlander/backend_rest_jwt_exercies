@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script src="register.js" defer="defer"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/client/index.html">Home</a>
+        <a href="/client/login.html">Log in</a>
+        <a href="#">Register</a>
+      </nav>
+      <h1 class="page-title">Food delivery</h1>
+    </header>
+    <h2>Register form</h2>
+    <form id="registerForm" class="register-form">
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" />
+      </div>
+      <div class="input-group">
+        <div class="input-group input-check">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div class="input-group input-check">
+          <label for="reEmail">Retype e-mail</label>
+          <input type="email" id="reEmail" />
+        </div>
+      </div>
+      <div class="input-group">
+        <div class="input-group input-check">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" />
+        </div>
+
+        <div class="input-group input-check">
+          <label for="rePassword">Retype password</label>
+          <input type="password" id="rePassword" />
+        </div>
+      </div>
+      <div class="input-group">
+        <label for="phone">Phonenumber</label>
+        <input type="text" id="phone" name="phone" />
+      </div>
+      <button id="regBtn" type="submit">Register</button>
+      <button id="resetBtn" type="reset">Clear form</button>
+    </form>
+    <div class="server-info"></div>
+  </body>
+</html>

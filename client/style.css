@@ -1,0 +1,35 @@
+nav {
+  display: flex;
+  gap: 1em;
+}
+
+.register-form {
+  margin: 1em;
+}
+
+.input-group {
+  position: relative;
+  display: grid;
+  width: max-content;
+}
+
+.input-group:not(.input-check) {
+  margin: 1em 0;
+}
+.input-check {
+  margin: 0.2em 0;
+}
+.input-check:has(.red-outline)::after {
+  position: absolute;
+  top: 1.2em;
+  left: 110%;
+  content: attr(data-msg);
+  width: max-content;
+}
+.red-outline {
+  outline: 2px solid red;
+}
+
+.green-outline {
+  outline: 2px solid green;
+}
